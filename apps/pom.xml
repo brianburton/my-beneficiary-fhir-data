@@ -844,6 +844,8 @@
                             things up if releases fail. -->
                         <pushChanges>false</pushChanges>
                         <localCheckout>true</localCheckout>
+                        <autoVersionSubmodules>true</autoVersionSubmodules>
+                        <commitByProject>false</commitByProject>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -1046,6 +1048,7 @@
                 <jib.skip>false</jib.skip>
                 <jib.goal>build</jib.goal>
                 <jib.namespace>577373831711.dkr.ecr.us-east-1.amazonaws.com/</jib.namespace>
+                <maven.build.cache.enabled>false</maven.build.cache.enabled>
             </properties>
             <distributionManagement>
                 <repository>
