@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>gov.cms.bfd</groupId>
     <artifactId>bfd-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <name>bfd-parent</name>
@@ -41,7 +40,7 @@
         <connection>scm:git:git@github.com:brianburton/my-beneficiary-fhir-data.git</connection>
         <developerConnection>scm:git:git@github.com:brianburton/my-beneficiary-fhir-data.git</developerConnection>
         <url>https://github.com/brianburton/beneficiary-fhir-data</url>
-        <tag>HEAD</tag>
+        <tag>bfd-parent-1.0.0</tag>
     </scm>
 
     <modules>
@@ -182,8 +181,8 @@
         <!-- Note: See gov.cms.bfd.model.rif.schema.DatabaseTestHelper for details
             on the default 'jdbc:bfd-test:' URL here. -->
         <its.db.url>jdbc:bfd-test:tc</its.db.url>
-        <its.db.username/>
-        <its.db.password/>
+        <its.db.username />
+        <its.db.password />
         <its.testcontainer.db.image>postgres:14.7-alpine</its.testcontainer.db.image>
 
         <!-- Whether the partially adjudicated claims endpoints should be enabled -->
@@ -215,7 +214,7 @@
         <!-- Additional image tag for images built by jib.  (e.g. release number or commit hash)-->
         <jib.tag>latest</jib.tag>
         <!-- Optional image namespace. -->
-        <jib.namespace/>
+        <jib.namespace />
         <!-- Skip by default.  Override to allow images to be built. -->
         <jib.skip>true</jib.skip>
     </properties>
@@ -1091,7 +1090,7 @@
                                             <action>
                                                 <!-- Don't run this plugin inside m2e; necessary to disable a
                                                     POM warning in Eclipse. -->
-                                                <ignore/>
+                                                <ignore />
                                             </action>
                                         </pluginExecution>
                                         <pluginExecution>
@@ -1106,7 +1105,7 @@
                                             <action>
                                                 <!-- Don't run this plugin inside m2e; necessary to disable a
                                                     POM warning in Eclipse. -->
-                                                <ignore/>
+                                                <ignore />
                                             </action>
                                         </pluginExecution>
                                         <pluginExecution>
@@ -1121,7 +1120,7 @@
                                             <action>
                                                 <!-- Don't run this plugin inside m2e; necessary to disable a
                                                     POM warning in Eclipse. -->
-                                                <ignore/>
+                                                <ignore />
                                             </action>
                                         </pluginExecution>
                                         <pluginExecution>
@@ -1135,7 +1134,7 @@
                                             </pluginExecutionFilter>
                                             <action>
                                                 <!-- Don't run this plugin automatically on every build inside m2e. -->
-                                                <ignore/>
+                                                <ignore />
                                             </action>
                                         </pluginExecution>
                                     </pluginExecutions>
