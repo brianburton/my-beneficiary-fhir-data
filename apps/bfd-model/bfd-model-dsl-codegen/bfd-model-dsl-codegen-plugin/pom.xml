@@ -5,11 +5,11 @@
     <parent>
         <groupId>gov.cms.bfd</groupId>
         <artifactId>bfd-model-dsl-codegen-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>bfd-model-dsl-codegen-plugin</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <description>
