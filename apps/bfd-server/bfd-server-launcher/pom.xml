@@ -136,6 +136,15 @@
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <!-- Dependency required to ensure bfd-server-launcher-sample is available in ITs. -->
+            <!-- This forces maven to build it before this module but doesn't impact classpath. -->
+            <groupId>gov.cms.bfd</groupId>
+            <artifactId>bfd-server-launcher-sample</artifactId>
+            <version>${project.version}</version>
+            <type>war</type>
+            <scope>optional</scope>
+        </dependency>
     </dependencies>
 
     <build>

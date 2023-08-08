@@ -315,6 +315,35 @@
             <artifactId>bfd-data-fda</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <!-- Dependency required to ensure bfd-server-launcher is built before this module. -->
+            <!-- This forces maven to build it before this module but doesn't impact classpath. -->
+            <groupId>gov.cms.bfd</groupId>
+            <artifactId>bfd-server-launcher</artifactId>
+            <version>${project.version}</version>
+            <scope>optional</scope>
+        </dependency>
+        <dependency>
+            <!-- Jetty is the embedded web server that this project uses to run WARs. -->
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>${jetty.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <!-- Jetty is the embedded web server that this project uses to run WARs. -->
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-webapp</artifactId>
+            <version>${jetty.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <!-- Jetty is the embedded web server that this project uses to run WARs. -->
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-annotations</artifactId>
+            <version>${jetty.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
