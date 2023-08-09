@@ -3,13 +3,13 @@
     <parent>
         <groupId>gov.cms.bfd</groupId>
         <artifactId>bfd-parent</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2-SNAPSHOT</version>
     </parent>
 
     <groupId>gov.cms.bfd.data.npi</groupId>
     <artifactId>bfd-data-npi</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
 
     <description>
         NPI Org code lookup jar
