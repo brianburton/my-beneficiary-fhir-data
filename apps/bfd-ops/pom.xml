@@ -11,7 +11,7 @@
     <packaging>pom</packaging>
 
     <description>
-        A ZIP file containing the BFD ops tree.
+        Produces a compressed GNU tar file containing the BFD ops tree.
     </description>
 
     <properties>
@@ -23,27 +23,11 @@
     </properties>
 
     <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-assembly-plugin</artifactId>
-                    <version>${maven.assembly.plugin.version}</version>
-                    <configuration>
-                        <appendAssemblyId>false</appendAssemblyId>
-                        <tarLongFileMode>gnu</tarLongFileMode>
-                        <descriptors>
-                            <descriptor>src/main/assembly/tar.xml</descriptor>
-                        </descriptors>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
         <plugins>
             <!-- Copies contents of the ops directory prior to assembly. -->
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>2.6</version>
+                <version>${maven.resources.plugin.version}</version>
                 <executions>
                     <execution>
                         <id>copy-resources</id>
@@ -66,6 +50,15 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
+                <version>${maven.assembly.plugin.version}</version>
+                <configuration>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <!-- Prevent warnings about long file paths.  GNU tar required to unpack the file. -->
+                    <tarLongFileMode>gnu</tarLongFileMode>
+                    <descriptors>
+                        <descriptor>src/main/assembly/tar.xml</descriptor>
+                    </descriptors>
+                </configuration>
                 <executions>
                     <execution>
                         <id>build-assembly</id>
