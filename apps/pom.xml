@@ -3,7 +3,7 @@
 
     <groupId>gov.cms.bfd</groupId>
     <artifactId>bfd-parent</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
     <packaging>pom</packaging>
 
     <name>bfd-parent</name>
@@ -40,7 +40,7 @@
         <connection>scm:git:git@github.com:brianburton/my-beneficiary-fhir-data.git</connection>
         <developerConnection>scm:git:git@github.com:brianburton/my-beneficiary-fhir-data.git</developerConnection>
         <url>https://github.com/brianburton/beneficiary-fhir-data</url>
-        <tag>HEAD</tag>
+        <tag>bfd-parent-1.0.2</tag>
     </scm>
 
     <modules>
@@ -68,7 +68,7 @@
         <!-- Create a standard (but fake) timestamp for use in creating build artifacts so that
             they are reproducible bit-by-bit no matter when/where they are generated.
             See https://maven.apache.org/guides/mini/guide-reproducible-builds.html -->
-        <project.build.outputTimestamp>2022-01-01T00:00:00Z</project.build.outputTimestamp>
+        <project.build.outputTimestamp>2023-08-09T17:56:50Z</project.build.outputTimestamp>
 
         <!-- Configure Sonar such that projects evaluated by it against it will
             use JaCoCo to compute the code coverage of any unit and integration tests. -->
