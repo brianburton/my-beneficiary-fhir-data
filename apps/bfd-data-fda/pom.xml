@@ -4,13 +4,13 @@
     <parent>
         <groupId>gov.cms.bfd</groupId>
         <artifactId>bfd-parent</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.1</version>
     </parent>
 
     <groupId>gov.cms.bfd.data.fda.utility</groupId>
     <artifactId>bfd-data-fda</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
 
     <description>
         FDA Drug code lookup jar
