@@ -320,7 +320,7 @@
             <groupId>gov.cms.bfd</groupId>
             <artifactId>bfd-server-launcher</artifactId>
             <version>${project.version}</version>
-            <scope>optional</scope>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <!-- Jetty is the embedded web server that this project uses to run WARs. -->

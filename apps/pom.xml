@@ -264,17 +264,6 @@
                 <version>${flyway.version}</version>
             </dependency>
             <dependency>
-                <!-- Used to create mock objects for unit tests. -->
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-core</artifactId>
-                <version>${mockito.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-inline</artifactId>
-                <version>${mockito-inline.version}</version>
-            </dependency>
-            <dependency>
                 <!-- Used to write fluent assertions in unit tests. -->
                 <groupId>org.assertj</groupId>
                 <artifactId>assertj-core</artifactId>
@@ -310,12 +299,6 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>jcl-over-slf4j</artifactId>
                 <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <!-- Adds convenience features for working with mocks in tests -->
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-junit-jupiter</artifactId>
-                <version>${mockito.version}</version>
             </dependency>
             <dependency>
                 <!-- An implementation of the Log4J API that routes everything through

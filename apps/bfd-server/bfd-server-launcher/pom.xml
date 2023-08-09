@@ -142,7 +142,7 @@
             <artifactId>bfd-server-launcher-sample</artifactId>
             <version>${project.version}</version>
             <type>war</type>
-            <scope>optional</scope>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
